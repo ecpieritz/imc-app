@@ -1,0 +1,17 @@
+:root{
+  --blue: #189ae6;
+
+}
+
+body{
+  font-family: 'Oswald', sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  width: 90%;
+  margin: auto;
+}
+
+h1{
+  text-align: center;
+  color: var(--blue);
+}

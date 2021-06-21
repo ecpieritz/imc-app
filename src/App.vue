@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    Teste
   </div>
 </template>
 
@@ -11,5 +10,5 @@ export default {
 </script>
 
 <style>
-
+  
 </style>
