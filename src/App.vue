@@ -17,7 +17,8 @@
     </div>
 
     <div class="div-imc">
-      <Button label="Calcular" @click="calculate" />
+      <Button label="Calcular" id="calculate" @click="calculate" />
+      <Button label="Limpar" id="clear" @click="clear" />
     </div>
 
     <div>
@@ -52,6 +53,12 @@ export default {
       } else{
         this.classification = 'Obesidade Grave'
       }
+    },
+    clear(){
+      this.height = null
+      this.weight = null
+      this.imc = null
+      this.classification = ''
     }
   }
 };
