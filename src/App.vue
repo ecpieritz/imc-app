@@ -21,7 +21,7 @@
       <Button label="Limpar" id="clear" @click="clear" />
     </div>
 
-    <div>
+    <div v-if="imc">
       <h3>Seu imc é de: {{ imc }}</h3>
       <h4>A classificação do seu IMC é: <span class="text-blue">{{ classification }}</span></h4>
     </div>
