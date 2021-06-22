@@ -20,7 +20,10 @@
       <Button label="Calcular" @click="calculate" />
     </div>
 
-    <h3>Seu imc é de: {{imc}}</h3>
+    <div>
+      <h3>Seu imc é de: {{ imc }}</h3>
+      <h4>A classificação do seu IMC é: <span class="text-blue">{{ classification }}</span></h4>
+    </div>
   </div>
 </template>
 
@@ -30,18 +33,29 @@ export default {
     return {
       height: null,
       weight: null,
-      imc: null
+      imc: null,
+      classification: ''
     };
   },
   methods:{
     calculate(){
       this.imc = ((this.weight) / (this.height * this.height)).toFixed(2)
-      return this.imc
+      
+      if (this.imc < 18.5){
+        this.classification = 'Magreza'
+      } else if (this.imc >= 18.5 && this.imc < 25){
+        this.classification = 'Normal'
+      } else if (this.imc >= 25 && this.imc < 30){
+        this.classification = 'Sobrepeso'
+      } else if (this.imc >= 30 && this.imc < 40){
+        this.classification = 'Obesidade'
+      } else{
+        this.classification = 'Obesidade Grave'
+      }
     }
   }
 };
 </script>
 
 <style>
-
 </style>

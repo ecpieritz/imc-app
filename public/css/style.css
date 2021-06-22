@@ -16,6 +16,10 @@ h1{
   color: var(--blue);
 }
 
+.text-blue{
+  color: var(--blue);
+}
+
 #input-weight,
 #input-height{
   height: 50px;
