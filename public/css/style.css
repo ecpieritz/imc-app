@@ -1,5 +1,7 @@
 :root{
   --blue: #189ae6;
+  --fucsia: #b80a8c;
+  --dark-fucsia: #94016f;
 
 }
 
@@ -27,4 +29,17 @@ h1{
 
 .div-imc{
   margin-top: 2rem;
+}
+
+#calculate{
+  margin-right: 1rem;
+}
+
+#clear{
+  background-color: var(--fucsia);
+  border: 1px solid var(--fucsia);
+}
+#clear:hover{
+  background-color: var(--dark-fucsia);
+  border: 1px solid var(--dark-fucsia);
 }
