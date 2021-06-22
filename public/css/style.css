@@ -18,6 +18,9 @@ h1{
 
 #input-weight,
 #input-height{
-  margin-bottom: 25px;
   height: 50px;
+}
+
+.div-imc{
+  margin-top: 2rem;
 }
