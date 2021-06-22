@@ -17,8 +17,10 @@
     </div>
 
     <div class="div-imc">
-      <Button label="Calcular" />
+      <Button label="Calcular" @click="calculate" />
     </div>
+
+    <h3>Seu imc é de: {{imc}}</h3>
   </div>
 </template>
 
@@ -28,9 +30,15 @@ export default {
     return {
       height: null,
       weight: null,
+      imc: null
     };
   },
-  
+  methods:{
+    calculate(){
+      this.imc = ((this.weight) / (this.height * this.height)).toFixed(2)
+      return this.imc
+    }
+  }
 };
 </script>
 
